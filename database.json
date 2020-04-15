@@ -1,126 +1,206 @@
 {
-  "products": [
+  "goals": {
+    "leads": {
+      "total": 5,
+      "remaining": 2
+    },
+    "calls": {
+      "total": 10,
+      "remaining": 2
+    },
+    "meetings": {
+      "total": 5,
+      "remaining": 1
+    }
+  },
+
+  "leads": [
     {
       "id": 1,
-      "name": "Product001",
-      "cost": 10,
-      "quantity": 1000,
-      "locationId": 1,
-      "familyId": 1
+      "name": "Crystal Luna",
+      "lastActivity": {
+        "type": "Website Activity",
+        "when": "Today"
+      },
+      "stage": "Nurture",
+      "outreachProgress": 50
     },
     {
       "id": 2,
-      "name": "Product002",
-      "cost": 20,
-      "quantity": 2000,
-      "locationId": 1,
-      "familyId": 2
-    },
-    {
-      "id": 3,
-      "name": "Product003",
-      "cost": 30,
-      "quantity": 3000,
-      "locationId": 3,
-      "familyId": 2
-    },
-    {
-      "id": 4,
-      "name": "Product004",
-      "cost": 40,
-      "quantity": 4000,
-      "locationId": 2,
-      "familyId": 3
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "id": 17
-    },
-    {
-      "id": 18
+      "name": "Yaritza Luzardo",
+      "lastActivity": {
+        "type": "Website Activity",
+        "when": "Today"
+      },
+      "stage": "Lead",
+      "outreachProgress": 0
     }
   ],
-  "locations": [
-    {
-      "id": 1,
-      "name": "Location001"
+
+  "leadDetails": {
+    "id": 1,
+    "name": "Crystal Luna",
+    "lastActivity": {
+      "type": "Website Activity",
+      "when": "Today"
     },
-    {
-      "id": 2,
-      "name": "Location002"
+    "lastOutreach": {
+      "type": "Emailed",
+      "when": "5 days ago"
     },
-    {
-      "id": 3,
-      "name": "Location003"
+    "stage": "Nurture",
+    "suggestedAction": {
+      "type": "call",
+      "description": "Call the lead to collect their requirements",
+      "motivation": "80% of leads set up showings if you make 4 attempts over a week"
+    },
+    "leadStatus": "engage",
+    "connectionStatus": {
+      "value": 2,
+      "options": [{
+        "label": "connected",
+        "value": 1
+       }, {
+        "label": "voicemail",
+        "value": 2
+       }, {
+        "label": "busy",
+        "value": 3
+       }]
+    },
+    "form": {
+      "sections": [{
+        "label": "Motivation and Finance",
+        "fields": [{
+          "id": "timeframe",
+          "label": "Timeframe",
+          "type": "select",
+          "value": 2,
+          "options": [{
+            "label": "0-1 Month",
+            "value": 1
+          }, {
+            "label": "1-3 Months",
+            "value": 2
+          }, {
+            "label": "3-6 Months",
+            "value": 3
+          }, {
+            "label": "1 Year+",
+            "value": 4
+          }]
+        }, {
+          "id": "budget",
+          "label": "Budget",
+          "type": "number",
+          "value": null
+        }, {
+          "id": "preApproved",
+          "label": "Pre-approved",
+          "type": "checkbox",
+          "value": true
+        }, {
+          "id": "paymentMode",
+          "label": "Payment Mode",
+          "type": "select",
+          "value": 1,
+          "options": [{
+            "label": "Cash",
+            "value": 1
+          }, {
+            "label": "Mortgage",
+            "value": 2
+          }]
+        }, {
+          "id": "intent",
+          "label": "Intent",
+          "type": "checkbox",
+          "value": 2,
+          "options": [{
+            "label": "Immediate Buyer",
+            "value": 1
+          }, {
+            "label": "Not looking to buy right now",
+            "value": 2
+          }, {
+            "label": "Change mind",
+            "value": 3
+          }]
+        }]
+      }, {
+        "label": "Home Requirements",
+        "fields": [{
+          "id": "interestedAreas",
+          "label": "Interested Areas",
+          "type": "text",
+          "value": "Pembroke Pines, Broke Field"
+        }, {
+          "id": "propertyType",
+          "label": "Property Type",
+          "type": "select",
+          "value": null,
+          "options": [{
+            "label": "Apartment",
+            "value": 1
+          }, {
+            "label": "Condo",
+            "value": 2
+          }]
+        }, {
+          "id": "sellBeforeBuy",
+          "label": "Sell Before Buy",
+          "type": "checkbox",
+          "value": null
+        }, {
+          "id": "featureList",
+          "label": "Feature List",
+          "type": "tags",
+          "value": [
+            "Backyard",
+            "Laundry Room"
+          ]
+        }]
+      }, {
+        "label": "CRM Automation",
+        "fields": [{
+            "id": "connectToLender",
+            "label": "Connect To Lender",
+            "type": "checkbox",
+            "value": true
+          }, {
+            "id": "turnOffDripCampaign",
+            "label": "Turn Off Drip Campaigns",
+            "type": "checkbox",
+            "value": null
+          }, {
+            "id": "setupPropertyAlerts",
+            "label": "Setup Property Alerts",
+            "type": "checkbox",
+            "value": false
+          }]
+      }, {
+        "label": "Next Followup",
+        "description": "Please add the datetime for your next followup",
+        "fields": [{
+            "id": "date",
+            "label": "Date",
+            "type": "date",
+            "value": "2020-04-13T22:21:44.760Z"
+          }, {
+            "id": "datetime",
+            "label": "Time",
+            "type": "time",
+            "value": "2020-04-13T22:21:44.760Z"
+          }]
+      }, {
+        "label": "Additional Notes",
+        "fields": [{
+          "id": "notes",
+          "label": null,
+          "type": "textArea",
+          "value": null
+        }]
+      }]
     }
-  ],
-  "families": [
-    {
-      "id": 1,
-      "name": "FM001"
-    },
-    {
-      "id": 2,
-      "name": "FM002"
-    },
-    {
-      "id": 3,
-      "name": "FM003"
-    }
-  ],
-  "transactions": [
-    {
-      "id": 1,
-      "cost": 11,
-      "quantity": 10,
-      "productId": 1
-    },
-    {
-      "id": 2,
-      "cost": 12,
-      "quantity": 100,
-      "productId": 2
-    },
-    {
-      "id": 3,
-      "cost": 15,
-      "quantity": 101,
-      "productId": 3
-    }
-  ]
+  } 
 }
